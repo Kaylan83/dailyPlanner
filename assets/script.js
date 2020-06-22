@@ -77,7 +77,7 @@ $(document).ready(function () {
     $("button").on("click", function () {
         event.preventDefault();
 
-            plansArray = [];
+           
         for (var i = 0; i < ids.length; i++) {
             var inputId = $(ids[i]).attr("id");
             var inputValue = $(ids[i]).val();
@@ -90,12 +90,12 @@ $(document).ready(function () {
             
                 plansArray.push(plansObj);
               
-              localStorage.setItem("plansArray", JSON.stringify(plansArray));  
+               
             
         }  
-             
+          
         }
-            
+        localStorage.setItem("plansArray", JSON.stringify(plansArray));      
     });
 
   
